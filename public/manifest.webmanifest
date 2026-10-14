@@ -1,0 +1,26 @@
+{
+  "name": "SoliVana Resonance",
+  "short_name": "Resonance",
+  "description": "Frequency wellness platform — binaural beats, Solfeggio tones, Schumann resonance, isochronic tones, and color noise generated directly in your browser.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FFF8F0",
+  "theme_color": "#FFF8F0",
+  "categories": ["health", "lifestyle", "music"],
+  "icons": [
+    {
+      "src": "/category-solfeggio.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/category-solfeggio.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

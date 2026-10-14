@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 100% 97%;        /* #FFF8F0 soft */
+    --foreground: 28 96% 10%;          /* #331D01 brown */
+    --card: 0 0% 100%;                 /* #FFFFFF paper */
+    --card-foreground: 28 96% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 28 96% 10%;
+    --primary: 28 80% 60%;             /* #EC9247 accent */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 7% 92%;             /* #F0EDED coffeeLight */
+    --secondary-foreground: 28 96% 10%;
+    --muted: 0 7% 92%;
+    --muted-foreground: 23 13% 43%;    /* #786455 coffeeText */
+    --accent: 28 80% 60%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 13 67% 36%;         /* #9B3A1F destructive */
+    --destructive-foreground: 0 0% 98%;
+    --border: 22 18% 64%;              /* #B49F90 coffee */
+    --input: 22 18% 64%;
+    --ring: 28 80% 60%;
+    --radius: 0.5rem;
+  }
+
+  body {
+    @apply bg-soft text-brown font-body antialiased;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    line-height: 1.7;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Jost", "Montserrat", system-ui, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    line-height: 1.05;
+  }
+
+  ::selection {
+    background-color: rgba(236, 146, 71, 0.2);
+    color: #331D01;
+  }
+
+  :focus-visible {
+    outline: 2px solid #EC9247;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  *:focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+
+@layer utilities {
+  .clip-hidden {
+    clip-path: inset(0 100% 0 0);
+  }
+  .clip-visible {
+    clip-path: inset(0 0% 0 0);
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+}
